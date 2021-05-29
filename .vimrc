@@ -1,6 +1,17 @@
 " Highlighting
 syntax on
 
+" Remapping ESC
+inoremap jk <ESC>
+
+" Searches
+set hlsearch
+set ignorecase
+set incsearch
+
+" Spell check
+" set spell spelllang=en_us
+
 " Vundle
 filetype off
 
