@@ -133,9 +133,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
+alias vim='vim -u ~/.vimrc'
 alias tmux='tmux -u'
+alias rustscan='sudo docker run -it --rm --name rustscan rustscan/rustscan:latest'
 
-#GOPATH for each Bash Session
-export GOPATH=~/go
-export GOBIN=~/go/bin
-export PATH=$PATH:$GOBIN
+export PATH=$PATH:/usr/local/go/bin:~/go/bin:~/bin
