@@ -16,8 +16,6 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
 Plugin 'TomNomNom/xoria256.vim'
-Plugin 'fatih/vim-go'
-Plugin 'rust-lang/rust.vim'
 
 call vundle#end()
 
@@ -157,3 +155,4 @@ if $VIMENV == 'prev'
 endif
 
 set nocompatible
+
