@@ -1,4 +1,4 @@
-/* monokai pro theme port for obsidian + Added tweaks for personal use */
+/* monokai pro theme port for obsidian */
 
 .theme-light,
 .theme-dark {
@@ -247,6 +247,7 @@ mjx-container[jax='CHTML'] {
   /* fix `` tag color */
   padding: 1px !important;
   color: #98c379;
+  word-wrap: break-word;
 }
 
 .cm-s-obsidian span.cm-inline-code,
@@ -259,7 +260,7 @@ mjx-container[jax='CHTML'] {
 
 .markdown-preview-view code {
   vertical-align: 0;
-  word-break: break-word;
+  word-wrap: break-word;
 }
 
 .markdown-preview-section:not(:first-child) h1,
@@ -274,32 +275,32 @@ mjx-container[jax='CHTML'] {
 
 .cm-header-1, .markdown-preview-section h1 {
   color: var(--red) !important;
-  margin-top: 2.25em;
+  margin-top: 1em;
   line-height: 1.2;
 }
 .cm-header-2, .markdown-preview-section h2 {
   color: var(--orange) !important;
-  margin-top: 2.25em;
+  margin-top: 1em;
   line-height: 1.2;
 }
 .cm-header-3, .markdown-preview-section h3 {
   color: var(--yellow) !important;
-  margin-top: 2.25em;
+  margin-top: 1em;
   line-height: 1.2;
 }
 .cm-header-4, .markdown-preview-section h4 {
   color: var(--green) !important;
-  margin-top: 2.25em;
+  margin-top: 1em;
   line-height: 1.2;
 }
 .cm-header-5, .markdown-preview-section h5 {
   color: var(--purple) !important;
-  margin-top: 2.25em;
+  margin-top: 1em;
   line-height: 1.2;
 }
 .cm-header-6, .markdown-preview-section h6 {
   color: var(--orange) !important;
-  margin-top: 2.25em;
+  margin-top: 1em;
   line-height: 1.2;
 }
 
@@ -414,10 +415,11 @@ a:hover,
 code[class*='language-'],
 pre[class*='language-'] {
   text-align: left !important;
-  white-space: pre !important;
+  white-space: pre-wrap !important;
   word-spacing: normal !important;
   word-break: normal !important;
-  word-wrap: normal !important;
+  word-wrap: break-word !important;
+  white-space: pre-wrap !important;
   line-height: 1.5 !important;
   -moz-tab-size: 4 !important;
   -o-tab-size: 4 !important;
@@ -431,7 +433,7 @@ pre[class*='language-'] {
 /* Code blocks */
 
 pre[class*='language-'] {
-  padding: 1px !important;
+  padding: 10px !important;
   margin: 0.5em 0 !important;
   overflow: auto !important;
 }
@@ -439,9 +441,9 @@ pre[class*='language-'] {
 /* Inline code */
 
 :not(pre) > code[class*='language-'] {
-  padding: 1px !important;
+  margin: 0.1em 0 !important;
   border-radius: 0.3em !important;
-  white-space: normal !important;
+  white-space: pre-wrap !important;
 }
 
 .token.comment,
