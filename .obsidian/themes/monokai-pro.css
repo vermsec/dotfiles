@@ -24,8 +24,8 @@
   --text-faint: #5b595c;
   --text-error: #ff6188;
   --text-error-hover: #ff619e;
-  --text-highlight-bg: #676566;
-  --text-selection: #676566;
+  --text-highlight-bg: #999999;
+  --text-selection: #999999;
   --text-on-accent: #19181a;
 
   --text-title-h1: #ff6188;
